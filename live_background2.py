@@ -1,4 +1,4 @@
-import cv2,pygame,os
+import pygame
 import ctypes
 from pynput import mouse
 import qparticles as qp
@@ -13,7 +13,8 @@ pic_folder = 'C:/Users/quinn/eclipse-workspace/1_games/random_stuff/pictures/'
 walpaper_mode = 4#0 is none
 #1 : lily pads and white circles
 #2 : lily pads and white circles only when click
-#3 : bunch of blue stuff falls from the sky
+#3 : red stuff
+#4 : bunch of blue stuff falls from the sky
 
 blue_man = qp.Particle(Shape = "rect",Size = [20,20],Csize = [0.5,0.5] ,Colour = [100,150,200],Ccolour = [-1,-1,-1],Cpos = [random.randint(-3,3),random.randint(3,6)],Timer = 250,Pos = [random.randint(0,dip_size[0]),0],Rotation = 0,Crotation = 30)
 blue_man = qp.Particle()
